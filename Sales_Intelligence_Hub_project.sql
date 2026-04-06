@@ -187,5 +187,3 @@ ALTER TABLE customer_sales DROP INDEX mobile_number;
 update customer_sales set received_amount = '5000.00' where date in ('2026-03-28');
 update customer_sales set received_amount = '6000.00' where date = '2026-03-28';
 
-# To find due this week
-SELECT SUM(pending_amount) FROM customer_sales WHERE date BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 7 DAY);
