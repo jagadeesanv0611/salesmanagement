@@ -63,10 +63,7 @@ with col_2:
             branch_list = [result]
                
         else:
-            cursor.execute("SELECT branch_name FROM branches")
-            result = cursor.fetchall()
-            branch_list = ['All'] + [row[0] for row in result]
-                
+            pass                
         branch_name = st.selectbox("Branch", branch_list, label_visibility = "collapsed")
 
 
